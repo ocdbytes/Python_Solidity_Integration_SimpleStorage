@@ -1,3 +1,5 @@
+<img src="Web3%20python%20-%20Simple%20Storage%2059346cc950614329ac52723f5783e7a6/main.png" width="100%"></img>
+
 # Web3 python - Simple Storage
 
 ## Compiling the Solidity Code from Python
@@ -96,7 +98,7 @@ Download It
 pip install web3
 ```
 
-## Now we will see how we will connect our blockchain contract with a network  (Ganache)→
+## Now we will see how we will connect our blockchain contract with a network (Ganache)→
 
 1. Import Web3 Library in our code
 
@@ -104,7 +106,7 @@ pip install web3
 from web3 import Web3
 ```
 
-1. create a HTTP Provider and connect to blockchain 
+1. create a HTTP Provider and connect to blockchain
 
 ```python
 w3 = Web3(Web3.HTTPProvider("network_link_here"))
@@ -182,6 +184,7 @@ simple_storage = w3.eth.contract(
 ```
 
 1. We can interact in two ways with our Contract :
+
 - Call → Simulate making the call and getting the value (no state change involved)
 - Transact -> actually make a state change
 
@@ -361,18 +364,18 @@ Transaction build successfull 🎯
 Transaction success ✅
 Contract for interaction initialised 🗳️
 -------------------------------------------
-Initial value (Favorite Number) : 
+Initial value (Favorite Number) :
 0
 -------------------------------------------
 Store(15) transaction done ✅
 Transaction Recipt ->
 AttributeDict({'transactionHash': HexBytes('0x4b6a97ff70a77c5ce62c6e59e9d6d8a02a0af629fb192b7fc32ad48b18b78050'), 'transactionIndex': 0, 'blockHash': HexBytes('0xf6b1bca9c9ca1290798cec30a0b90fd872be0459e3030f63f184b3df9d2f0e84'), 'blockNumber': 16, 'from': '0x3e8683715c1455d051Cd0BFf6f6e087b29823529', 'to': '0xd302C0D225B08f4ed5dEE368902F247353629C45', 'gasUsed': 41518, 'cumulativeGasUsed': 41518, 'contractAddress': None, 'logs': [], 'status': 1, 'logsBloom': HexBytes('0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000')})
 -------------------------------------------
-Final value (Favorite Number) : 
+Final value (Favorite Number) :
 15
 -------------------------------------------
 ```
 
 ![Screenshot 2022-02-05 at 11.42.51 PM.png](Web3%20python%20-%20Simple%20Storage%2059346cc950614329ac52723f5783e7a6/Screenshot_2022-02-05_at_11.42.51_PM.png)
 
-# Yay!! We have integrated our First Contract with Python  🎉🍻
+# Yay!! We have integrated our First Contract with Python 🎉🍻
