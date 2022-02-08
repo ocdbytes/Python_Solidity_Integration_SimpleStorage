@@ -1,4 +1,5 @@
 # install py-solc-x for compiling solidity file
+# Deployed on Ganache-CLI
 import os
 import json
 from web3 import Web3
@@ -42,7 +43,7 @@ abi = compiled_sol["contracts"]["SimpleStorage.sol"]["SimpleStorage"]["abi"]
 # for connecting to ganache
 
 # HTTP Provider (for connecting to blockchain)
-w3 = Web3(Web3.HTTPProvider("HTTP://127.0.0.1:7545"))
+w3 = Web3(Web3.HTTPProvider("HTTP://127.0.0.1:8545"))
 print("Blockchain Connected....")
 # Our credentials
 chain_id = 1337
